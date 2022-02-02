@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://googleformsnetw.gd" type="Script" id=1]
+
+[node name="main" type="HTTPRequest"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 358.0
+margin_top = 150.0
+margin_right = 571.0
+margin_bottom = 232.0
+text = "SEND DATA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 349.0
+margin_top = 260.0
+margin_right = 592.0
+margin_bottom = 299.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
